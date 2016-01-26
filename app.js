@@ -26,7 +26,7 @@ function computerChoice() {
 
 
 }
-function play() {
+function play(playerChoice) {
     var pc = playerChoice;
     var cc = computerChoice();
 
@@ -51,7 +51,7 @@ function play() {
     else if (pc === "paper" && cc === "scissors") {
         alert("Computer wins. Too bad.");
     }
-
+}
 
 
    
