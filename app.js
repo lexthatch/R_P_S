@@ -1,4 +1,4 @@
-<script>
+
 
 var rock;
 var paper;
@@ -14,7 +14,7 @@ function computerChoice() {
         computerChoice = "rock";
         return "rock";
     }
-    else if (0.34 <= computerChoice <= 0.66) {
+    else if (0.34 <= computerChoice && computerChoice <= 0.66) {
         computerChoice = "paper";
         return "paper";
     }
@@ -23,12 +23,12 @@ function computerChoice() {
         return "scissors";
     }
 
-    
+
 
 }
 function play() {
-    pc = playerChoice;
-    cc = computerChoice;
+    var pc = playerChoice;
+    var cc = computerChoice();
 
     if (pc === cc) {
         alert("tie");
@@ -54,6 +54,6 @@ function play() {
 
 
 
-    </script>
+   
 
   
